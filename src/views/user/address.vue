@@ -3,7 +3,7 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.userId" clearable size="small" class="filter-item" style="width: 200px;" placeholder="请输入用户ID"/>
+      <el-input v-model="listQuery.queryUserId" clearable size="small" class="filter-item" style="width: 200px;" placeholder="请输入用户ID"/>
       <el-input v-model="listQuery.name" clearable size="small" class="filter-item" style="width: 200px;" placeholder="请输入收货人名称"/>
       <el-button class="filter-item" type="primary" size="mini" icon="el-icon-search" @click="handleFilter">查找</el-button>
       <el-button :loading="downloadLoading" size="mini" class="filter-item" type="warning" icon="el-icon-download" @click="handleDownload">导出</el-button>
@@ -54,7 +54,7 @@ export default {
         page: 1,
         limit: 20,
         name: undefined,
-        userId: undefined,
+        queryUserId: undefined,
         sort: 'add_time',
         order: 'desc'
       },
