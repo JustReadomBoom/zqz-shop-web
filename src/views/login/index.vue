@@ -38,7 +38,7 @@
           :loading="loading"
           size="medium"
           type="primary"
-          style="width:100%;"
+          style="width:100%;background-color: #13ce66;border-color:#13ce66;"
           @click.native.prevent="handleLogin">
           <span v-if="!loading">登 录</span>
           <span v-else>登 录 中...</span>
@@ -154,14 +154,15 @@ export default {
 .title {
   margin: 0px auto 30px auto;
   text-align: center;
-  color: #707070;
+  color: #57a82b;
+  font-size: xx-large;
 }
 
 .login-form {
   border-radius: 6px;
-  background: #ffffff;
-  width: 400px;
-  padding: 25px 25px 5px 25px;
+  background: #d4e3d7;
+  width: 417px;
+  padding: 35px 35px 5px 35px;
   .el-input {
     height: 38px;
     input {

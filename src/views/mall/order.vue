@@ -19,6 +19,8 @@
 
       <el-table-column align="center" min-width="100px" label="用户ID" prop="userId"/>
 
+      <el-table-column align="center" min-width="100px" label="收货人" prop="consignee"/>
+
       <el-table-column align="center" min-width="100px" label="订单状态" prop="orderStatus">
         <template slot-scope="scope">
           <el-tag>{{ scope.row.orderStatus | orderStatusFilter }}</el-tag>
@@ -34,6 +36,8 @@
       <el-table-column align="center" min-width="120px" label="物流单号" prop="shipSn"/>
 
       <el-table-column align="center" min-width="100px" label="物流渠道" prop="shipChannel"/>
+
+      <el-table-column align="center" min-width="100px" label="下单时间" prop="addTime"/>
 
       <el-table-column align="center" label="操作" min-width="150px" class-name="small-padding fixed-width">
         <template slot-scope="scope">
