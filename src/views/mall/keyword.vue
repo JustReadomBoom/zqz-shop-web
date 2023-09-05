@@ -159,6 +159,7 @@ export default {
               title: '成功',
               message: '创建成功'
             })
+            this.getList()
           }).catch(response => {
             this.$notify.error({
               title: '失败',

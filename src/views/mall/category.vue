@@ -260,6 +260,8 @@ export default {
                 title: '成功',
                 message: '创建成功'
               })
+              this.getList()
+              this.getCatL1()
             })
             .catch(response => {
               this.$notify.error({
